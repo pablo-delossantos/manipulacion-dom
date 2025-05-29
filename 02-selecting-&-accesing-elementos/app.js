@@ -18,3 +18,11 @@ console.log(previousSibling)
 
 const nextSibling = parent.nextElementSibling
 console.log(nextSibling)
+
+// Seleccionar de padres a hijos
+
+const children2 = document.querySelector("li")
+console.log(children2)
+
+const parent2 = children2.parentNode
+console.log(parent2)
