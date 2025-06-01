@@ -5,18 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clase 3</title>
     <style>
-      * {
+      /* * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-      }
+      } */
       body {
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
         background-color: #282828;
         color: #fafafa;
       }
-      a {
-        color: coral;
+      .menu {
+        background-color: #5b5bff;
+        font-size: 16px;
+      }
+      .main-menu {
+        color: #10db8d;
+      }
+      .visible {
+        display: block;
+      }
+      .invisible {
+        display: none;
       }
     </style>
   </head>
@@ -24,19 +34,27 @@
   <body>
     <header>
       <h1 id="app-title">Soy el header de esta app</h1>
-      <menu>
-        <ul>
+      <menu class="menu">
+        <ul id="parent">
           <li><a href="#">Home</a></li>
           <li class="menu-items"><a href="#">About me</a></li>
           <li class="menu-items"><a href="#">Blogs</a></li>
           <li class="menu-items"><a href="#">Contact</a></li>
         </ul>
+        <section></section>
       </menu>
     </header>
     <main>
+      <button>Toggle visibility</button>
       <!-- Los atributos son parte del HTML, como id, class, type, value, etc. -->
-      <input id="input-id" class="input-class" type="text" value="Nombre" />
-      <p>Las propiedades son los reflejos de los atributos en JavaScript.</p>
+      <!-- <input id="input-id" class="input-class" type="text" value="Nombre" /> -->
+      <section>
+        <p>Soy el texto principal de esta app</p>
+        <p>
+          Las propiedades son los reflejos de los atributos en JavaScript. Los
+          atributos reflejan el estado inicial de HTML.
+        </p>
+      </section>
     </main>
     <script src="app.js"></script>
   </body>
