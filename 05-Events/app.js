@@ -23,3 +23,5 @@ button.addEventListener("click", buttonClickCallback)
 setTimeout(() => {
   button.removeEventListener("click", buttonClickCallback)
 }, 2000)
+
+// Los eventos son OBJETOS de JS
