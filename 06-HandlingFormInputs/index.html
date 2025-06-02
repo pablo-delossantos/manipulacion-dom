@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validación de Formularios</title>
+    <style>
+      body {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        background-color: #282828;
+        color: #fafafa;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <form id="myForm">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name="email" required />
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
